@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/leaves-2146615.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 5%;
+    /* Adjust padding for smaller screens */
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+.logo-text {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-weight: lighter;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    /* Default text color */
+    text-align: left;
+    /* Left align content by default */
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #3aeb57;
+    margin-bottom: 0px;
+    /* Add spacing below heading */
+}
+
+.content p {
+    font-size: 40px;
+}
+
+.content p span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.content button {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center button content */
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.content button img {
+    width: 50px;
+    margin-left: 10px;
+}
+.content button:hover {
+    box-shadow: 0 0 10px #3aeb57;
+    border-color: #3aeb57;
+}
+.launchTime {
+    display:flex;
+}
+.launchTime div{
+    flex-basis: 100px;
+}
+.launchTime div {
+    margin-top: 20px;
+}
+.register {
+    text-decoration: none;
+}
+
+/* form */
+.formSection{
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#results {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .content p {
+        font-size: 30px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .content p span {
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
+    }
+    .logo-text {
+        font-size: 10px;
+    }
+}
